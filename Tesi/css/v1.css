@@ -1,0 +1,213 @@
+
+.modernizr-slideshow,
+.modernizr-slideshow:after { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0; 
+}
+.modernizr-slideshow:after { 
+  content: '';
+  background: transparent url(../images/pattern.png) repeat top left; 
+}
+.modernizr-slideshow li span { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-animation: imageAnimation 36s linear infinite 0s;
+  -moz-animation: imageAnimation 36s linear infinite 0s;
+  -o-animation: imageAnimation 36s linear infinite 0s;
+  -ms-animation: imageAnimation 36s linear infinite 0s;
+  animation: imageAnimation 36s linear infinite 0s; 
+}
+.modernizr-slideshow li div { 
+  z-index: 1000;
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  -webkit-animation: titleAnimation 36s linear infinite 0s;
+  -moz-animation: titleAnimation 36s linear infinite 0s;
+  -o-animation: titleAnimation 36s linear infinite 0s;
+  -ms-animation: titleAnimation 36s linear infinite 0s;
+  animation: titleAnimation 36s linear infinite 0s; 
+}
+.modernizr-slideshow li div h3 { 
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  padding: 0;
+  line-height: 220px; 
+}
+.modernizr-slideshow li:nth-child(1) span { 
+  background-image: url(../images/02.jpg) 
+}
+.modernizr-slideshow li:nth-child(2) span { 
+  background-image: url(../images/lifestyle1.jpg);
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s; 
+}
+.modernizr-slideshow li:nth-child(3) span { 
+  background-image: url(../images/kailao.jpg);
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  animation-delay: 12s; 
+}
+.modernizr-slideshow li:nth-child(4) span { 
+  background-image: url(../images/king.jpg);
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -o-animation-delay: 18s;
+  -ms-animation-delay: 18s;
+  animation-delay: 18s; 
+}
+.modernizr-slideshow li:nth-child(5) span { 
+  background-image: url(../images/wedding.jpg);
+  -webkit-animation-delay: 24s;
+  -moz-animation-delay: 24s;
+  -o-animation-delay: 24s;
+  -ms-animation-delay: 24s;
+  animation-delay: 24s; 
+}
+.modernizr-slideshow li:nth-child(6) span { 
+  background-image: url(../images/street.jpg);
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  -o-animation-delay: 30s;
+  -ms-animation-delay: 30s;
+  animation-delay: 30s; 
+}
+/* Animation for the slideshow images */
+@-webkit-keyframes imageAnimation { 
+  0% { opacity: 0;
+       -webkit-animation-timing-function: ease-in; }
+  8% { opacity: 1;
+       -webkit-animation-timing-function: ease-out; }
+  17% { opacity: 1 }
+  25% { opacity: 0 }
+  100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation { 
+  0% { opacity: 0;
+       -moz-animation-timing-function: ease-in; }
+  8% { opacity: 1;
+       -moz-animation-timing-function: ease-out; }
+  17% { opacity: 1 }
+  25% { opacity: 0 }
+  100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation { 
+  0% { opacity: 0;
+       -o-animation-timing-function: ease-in; }
+  8% { opacity: 1;
+       -o-animation-timing-function: ease-out; }
+  17% { opacity: 1 }
+  25% { opacity: 0 }
+  100% { opacity: 0 }
+}
+@-ms-keyframes imageAnimation { 
+  0% { opacity: 0;
+       -ms-animation-timing-function: ease-in; }
+  8% { opacity: 1;
+       -ms-animation-timing-function: ease-out; }
+  17% { opacity: 1 }
+  25% { opacity: 0 }
+  100% { opacity: 0 }
+}
+@keyframes imageAnimation { 
+  0% { opacity: 0;
+       animation-timing-function: ease-in; }
+  8% { opacity: 1;
+       animation-timing-function: ease-out; }
+  17% { opacity: 1 }
+  25% { opacity: 0 }
+  100% { opacity: 0 }
+}
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 10px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax-1 {
+  background-image: url("../images/2 2.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("../images/1 2.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../images/3 2.jpg");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+#logo{
+  float: left;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;
+
